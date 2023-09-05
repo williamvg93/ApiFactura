@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Big Proyect</title>
+    <script src="js/main.js" defer type="module"></script>
+    <link rel="shortcut icon" href="/img/git.png" />
+<!--     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous" defer></script> -->
+</head>
+  <body>
+    <header id="nanBar" class="navBar">
+        <div id="logo" class="logo">
+            <img src="img/logo.png" alt="Logo">
+        </div>
+        <div class="options">
+            <a href="">Home</a>
+            <a href="">Add invoice</a>
+            <a href="#" id="listVoiPage">List invoice</a>
+        </div>
+    </header>
+    <main class="container main-cont" id="main-cont">
+      <div class="contForm">
+        <form action="#" method="post">
+          <h2>Add Invoice</h2>
+          <div class="inputGroup">
+            <label for="userId">User Id</label>
+            <input
+              type="text"
+              name=""
+              placeholder="Enter the user ID"
+              id="userId"
+            />
+          </div>
+          <div class="inputGroup">
+            <label for="proCod">Product Code</label>
+            <input
+              type="text"
+              name=""
+              id="proCod"
+              placeholder="Enter the product code"
+            />
+          </div>
+          <div class="inputGroup">
+            <label for="proUnit">Product Units</label>
+            <input
+              type="text"
+              name=""
+              id="proUnit"
+              placeholder="Enter the product units"
+            />
+            <button type="button" id="AddProd">Add Product</button>
+          </div>
+
+          <button type="button" id="AddInvo">Add Invoiced</button>
+        </form>
+      </div>
+      <div class="contFact">
+        <div class="dataFact" id="dataFact">
+          <table border="1">
+            <thead>
+                <tr>
+                    <td>name</td>
+                    <td>Price</td>
+                    <td>Units</td>
+                    <td>Total</td>
+                </tr>
+            </thead>
+            <tbody id="tablaPro">
+            </tbody>
+          </table>
+          <div class="contTotal">
+              <strong class="Total" id="Total"></strong>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+</html>
